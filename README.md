@@ -2,9 +2,10 @@
 Este repositório guarda os trabalhos e projetos da disciplina.
 
 # Desenvolvedor:
-## Gabriel B. Dias
+- Gabriel B. Dias
 
 # Linguagens e Frameworks:
 - Python
 - C
 - Java
+- Dart

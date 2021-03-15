@@ -1,32 +1,30 @@
 package dias.gabriel;
 
 public class Conta {
+    //Atributos
+    Cliente cliente;
     int numero;
     double saldo;
-    Cliente cliente;
 
-
-    void visualizarSaldo(){
-
-        System.out.println("Saldo da conta: R$ "+ saldo);
-
+    //Métodos
+    void visualizarSaldo() {
+        System.out.println("Valor do saldo: R$" + this.saldo);
     }
-    void depositar(double valor){
-        this.saldo=this.saldo+valor;
-        //this.saldo+=valor;
 
-    }
     boolean sacar(double valor) {
-        if (this.saldo >= valor) {
+        if( this.saldo >= valor){
             this.saldo -= valor;
             return true;
         }
         return false;
     }
 
+    void depositar(double valor) {
+//        this.saldo = this.saldo + valor;
+        this.saldo += valor;
+    }
 
-
-    boolean transferirPara(double valor, Conta destino) {
+    boolean transferirDinheiro(Conta destino, double valor){
         if(this.sacar(valor)){
             destino.depositar(valor);
             return true;
@@ -37,9 +35,9 @@ public class Conta {
     @Override
     public String toString() {
         return "Conta{" +
-                "numero=" + numero +
+                "cliente=" + cliente.toString() +
+                ", numero=" + numero +
                 ", saldo=" + saldo +
-                ", cliente=" + cliente +
                 '}';
     }
 }

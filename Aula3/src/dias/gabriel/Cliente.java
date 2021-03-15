@@ -1,14 +1,14 @@
 package dias.gabriel;
 
 public class Cliente {
-    String cpf;
     String titular;
+    String cpf;
 
     @Override
     public String toString() {
         return "Cliente{" +
-                "cpf='" + cpf + '\'' +
-                ", titular='" + titular + '\'' +
+                "titular='" + titular + '\'' +
+                ", cpf='" + cpf + '\'' +
                 '}';
     }
 }

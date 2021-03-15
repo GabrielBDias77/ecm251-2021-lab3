@@ -15,6 +15,20 @@ public class Sistema {
 
             }
         }
+        private void avaliarOpcao(int opcao) {
+            switch (opcao) {
+                case 0:
+                    System.out.println("Obrigado por ter utilizado o sistema");
+                    this.executarSistema=false;
+                    break;
+                default:
+                    System.out.println("Opção não implementada");
+                    break;
+
+            }
+
+        }
+
 
         public Sistema() {
             this.executarSistema=true;
@@ -33,4 +47,4 @@ public class Sistema {
 
         }
     }
-}
+

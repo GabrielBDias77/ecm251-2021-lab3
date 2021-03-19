@@ -12,7 +12,7 @@ public class Conta {
         this.cliente=cliente;
         this.numero=numero;
         this.saldo=saldo;
-        
+
     }
     public double getSaldo(){
         return this.saldo;

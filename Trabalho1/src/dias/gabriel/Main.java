@@ -21,11 +21,16 @@ public class Main {
         //
         int opcao;
         Scanner entrada = new Scanner(System.in);
+            do {
+                Menu menu = new Menu();
+                menu.exibirMenu();
+                opcao = entrada.nextInt();
+                switch(opcao){
+                    default:
+                        System.out.println("Opção inválida.");
+                }
+            }while(opcao != 0);
 
-            Menu menu = new Menu();
-            menu.exibirMenu();
-            opcao = entrada.nextInt();
-            menu.avaliarOpcao(opcao);
 
 
 

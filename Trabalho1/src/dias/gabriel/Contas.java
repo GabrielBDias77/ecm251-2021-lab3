@@ -24,10 +24,10 @@ public class Contas {
 
     @Override
     public String toString() {
-        return "Contas{" +
-                "usuarios=" + usuarios +
-                ", saldo=" + saldo +
-                ", id=" + id +
+        return
+                "usuarios =" + usuarios +
+                ", saldo =" + saldo +
+                ", id =" + id +
                 '}';
     }
 }

@@ -2,6 +2,8 @@ package dias.gabriel;
 import java.awt.*;
 import java.util.Scanner;
 public class Menu {
+    private int opcao;
+
     public Usuarios getUsuarios(){return usuarios;}
         private boolean continuarExecucaoMenu;
         private Scanner scanner;
@@ -30,21 +32,21 @@ public class Menu {
         this.continuarExecucaoID = true;
         while(continuarExecucaoID) {
             exibirMenuID();
-            int opcao = scanner.nextInt();
             avaliarOpcaoMenuID(opcao);
         }
     }
     private void avaliarOpcaoMenuID(int opcao) {
-        String senha = scanner.next();
+         opcao = scanner.nextInt();
         switch (opcao) {
             default:
                 System.out.println("ID não encontrado");
                 break;
-           // case 1:
-            //    System.out.println("Informe a senha");
-            //    if (senha == Usuarios.senha) {
-            //        executarMenuConta();
-            //    } else System.out.println("senha Incorreta");
+            case 1:
+                System.out.println("Informe a senha");
+                String  senha = scanner.next();
+//                if (senha == ) {
+//                    executarMenuConta();
+//                } else System.out.println("senha Incorreta");
             //case 2:
             //    System.out.println("Informe a senha");
             //    if (senha == Usuarios.senha) {

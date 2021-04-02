@@ -1,47 +1,27 @@
 package dias.gabriel;
-
+import java.util.Random;
+import java.util.Scanner;
 public class Contas {
-    private int idConta;
-    private double saldo;
+    public Usuarios getUsuarios(){return usuarios;}
+
+    public int getId(){return id;}
+
     private Usuarios usuarios;
+    private double saldo;
+    private int id;
 
-    public Contas(int idConta, double saldo, String usuarios) {
-        this.idConta = idConta;
-        this.saldo = saldo;
-        this.usuarios = new Usuarios(usuarios);
-    }
-
-    public double getSaldo() {
-        return this.saldo;
-    }
-
-    public void depositar(double valor) {
-//        this.saldo = this.saldo + valor;
-        this.saldo += valor;
-    }
-
-    public boolean sacar(double valor) {
-        if (this.saldo >= valor) {
-            this.saldo -= valor;
-            return true;
-        }
-        return false;
-    }
-
-    public boolean transferirPara(double valor, Contas destino) {
-        if(this.sacar(valor)){
-            destino.depositar(valor);
-            return true;
-        }
-        return false;
+    public Contas(String nomeUsuario,double Saldoini, int ID){
+    this.usuarios=new Usuarios(nomeUsuario);
+    this.saldo=Saldoini;
+    this.id= ID;
     }
 
     @Override
     public String toString() {
-        return "Conta{" +
-                "ID=" + idConta +
+        return "Contas{" +
+                "usuarios=" + usuarios +
                 ", saldo=" + saldo +
-                ", usuario=" + usuarios.toString() +
+                ", id=" + id +
                 '}';
     }
 }

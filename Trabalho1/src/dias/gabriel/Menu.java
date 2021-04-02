@@ -2,10 +2,12 @@ package dias.gabriel;
 import java.awt.*;
 import java.util.Scanner;
 public class Menu {
+    public Usuarios getUsuarios(){return usuarios;}
         private boolean continuarExecucaoMenu;
         private Scanner scanner;
         private Contas contas;
         private boolean continuarExecucaoID;
+        private Usuarios usuarios;
 
 
 
@@ -38,50 +40,51 @@ public class Menu {
             default:
                 System.out.println("ID não encontrado");
                 break;
-            case 1:
-                System.out.println("Informe a senha");
+           // case 1:
+            //    System.out.println("Informe a senha");
+            //    if (senha == Usuarios.senha) {
+            //        executarMenuConta();
+            //    } else System.out.println("senha Incorreta");
+            //case 2:
+            //    System.out.println("Informe a senha");
+            //    if (senha == Usuarios.senha) {
+            //        executarMenuConta();
+            //    } else System.out.println("senha Incorreta");
 
-                if (senha == Usuarios.senha) {
-                    executarMenuConta();
-                } else System.out.println("senha Incorreta");
-            case 2:
-                System.out.println("Informe a senha");
-                if (senha == Usuarios.senha) {
-                    executarMenuConta();
-                } else System.out.println("senha Incorreta");
+            //case 3:
+            //    System.out.println("Informe a senha");
 
-            case 3:
-                System.out.println("Informe a senha");
-
-                if (senha == Usuarios.senha) {
-                    executarMenuConta();
-                } else System.out.println("senha Incorreta");
+               // if (senha == Usuarios.senha) {
+                 //   executarMenuConta();
+                //} else System.out.println("senha Incorreta");
         }
     }
 
 
     private void exibirMenuID() {
-        System.out.println("Bem vindo ao MauaBank");
-        System.out.println("Informe o ID da Conta");}
 
-        public Menu() {
+        System.out.println("Bem vindo ao MauaBank");
+        System.out.println("Informe o ID da Conta");
+
+    }
+    public Menu() {
 
             this.continuarExecucaoMenu = true;
             this.scanner = new Scanner(System.in);
             Contas c1;
-            c1 = new Contas(1, 1000);
+            c1 = new Contas(1, 1000,"111");
 
             Contas c2;
-            c2 = new Contas(2, 250);
+            c2 = new Contas(2, 250,"113");
 
             Contas c3;
-            c3 = new Contas(3, 3000);
+            c3 = new Contas(3, 3000,"123");
             System.out.println("Conta 1: " + c1.toString());
             System.out.println("Conta 2: " + c2.toString());
             System.out.println("Conta 3: " + c3.toString());
 
-   
-        }
+
+    }
 
         public void executarMenuConta(){
             while(continuarExecucaoMenu) {

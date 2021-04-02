@@ -1,13 +1,15 @@
 package dias.gabriel;
 
 public class Usuarios {
-    public static String senha;
 
-    private Usuarios(String nome, String senha){this.nome=nome;
-        this.senha = senha;
+    public Usuarios(String senha){
+    this.senha=senha;
     }
+    //private Usuarios(String senha){
+    //    this.senha = senha;
+    //}
     private String nome;
-    //private String senha;
+    private String senha;
     private String email;
 
     @Override

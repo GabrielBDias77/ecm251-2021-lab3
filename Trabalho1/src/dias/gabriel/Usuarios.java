@@ -20,8 +20,8 @@ public class Usuarios {
     @Override
     public String toString() {
         return "" +
-                "nome='" + nome + '\'' +
+                  nome  +
                 ", senha=" + senha +
-                ", email='" + email + '\'' ;
+                ", email=" + email ;
     }
 }

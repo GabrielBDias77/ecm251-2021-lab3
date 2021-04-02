@@ -10,4 +10,9 @@ public class Transacoes {
         String NovoQRCODE=valor+";"+destino.getId()+";"+UsuarioDestino.getNome()+";"+getRandomNumberInRange(1000,9999);
         return NovoQRCODE;
     }
+    public static void Transacao(Contas Paga, Contas Recebe, String QRCODE){
+        String s = QRCODE;
+        String[] dados = s.split( ";" ) ;
+        
+    }
 }

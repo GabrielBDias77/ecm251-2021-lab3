@@ -18,22 +18,8 @@ public class Main {
         System.out.println("Conta 2: " + c2.toString());
         System.out.println("Conta 3: " + c3.toString());
 
-        //
-        int opcao;
-        Scanner entrada = new Scanner(System.in);
-            do {
-                Menu menu = new Menu();
-                menu.exibirMenu();
-                opcao = entrada.nextInt();
-                switch(opcao){
-                    default:
-                        System.out.println("Opção inválida.");
-                }
-            }while(opcao != 0);
+        Menu menu = new Menu();
+        menu.executar();
 
-
-
-
-    }
-
+}
 }

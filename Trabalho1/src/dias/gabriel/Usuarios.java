@@ -2,9 +2,14 @@ package dias.gabriel;
 
 public class Usuarios {
 
-    public Usuarios(String senha){
-    this.senha=senha;
+    public Usuarios(String nome){
+    this.nome=nome;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
     //private Usuarios(String senha){
     //    this.senha = senha;
     //}

@@ -1,20 +1,20 @@
 package dias.gabriel;
 
-import java.util.Random;
-import java.util.Scanner;
-
 public class Usuarios {
-    public Usuarios(String nome){this.nome=nome;}
+    public static String senha;
+
+    private Usuarios(String nome, String senha){this.nome=nome;
+        this.senha = senha;
+    }
     private String nome;
-    private int senha;
+    //private String senha;
     private String email;
 
     @Override
     public String toString() {
-        return "Usuarios{" +
+        return "" +
                 "nome='" + nome + '\'' +
                 ", senha=" + senha +
-                ", email='" + email + '\'' +
-                '}';
+                ", email='" + email + '\'' ;
     }
 }

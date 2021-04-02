@@ -2,18 +2,19 @@ package dias.gabriel;
 import java.util.Random;
 import java.util.Scanner;
 public class Contas {
-    public Usuarios getUsuarios(){return usuarios;}
+    //public Usuarios getUsuarios(){return usuarios;}
 
     public int getId(){return id;}
 
-    private Usuarios usuarios;
+    //private Usuarios usuarios;
     private double saldo;
     private int id;
 
-    public Contas(String nomeUsuario,double Saldoini, int ID){
-    this.usuarios=new Usuarios(nomeUsuario);
+    public Contas(int ID,double Saldoini){
+    //this.usuarios=new Usuarios(nomeUsuario);
+    this.id = ID;
     this.saldo=Saldoini;
-    this.id= ID;
+
     }
     public double getSaldo() {
         return this.saldo;
@@ -22,10 +23,9 @@ public class Contas {
 
     @Override
     public String toString() {
-        return "Contas{" +
-                "usuarios=" + usuarios +
-                ", saldo=" + saldo +
-                ", id=" + id +
+        return
+                "{" + "id=" + id +"," +
+                "saldo=" + saldo +
                 '}';
     }
 }

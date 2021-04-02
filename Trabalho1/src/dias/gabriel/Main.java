@@ -6,8 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Menu menu = new Menu();
-        menu.executar();
+        var menu = new Menu();
+        menu.executarMenuID();
+       // menu.executarMenuConta();
 
 }
 }

@@ -8,7 +8,19 @@ public class Menu {
         public Menu() {
             this.continuarExecucao = true;
             this.scanner = new Scanner(System.in);
-            //this.contas = new Contas(1236, 1000, "Toad");
+            Contas c1;
+            c1 = new Contas("Neymar", 1000, 1);
+
+            Contas c2;
+            c2 = new Contas("Robinho", 250, 2);
+
+            Contas c3;
+            c3 = new Contas("Zé Love", 3000, 3);
+            System.out.println("Conta 1: " + c1.toString());
+            System.out.println("Conta 2: " + c2.toString());
+            System.out.println("Conta 3: " + c3.toString());
+
+   
         }
 
         public void executar(){

@@ -20,7 +20,7 @@ public class Transacoes {
         if (valorTransacao<= Paga.getSaldo()) {
             Paga.sacar(valorTransacao);
             Recebe.depositar(valorTransacao);
-
+            System.out.println("Transação efetuada com sucesso");
         }else {
             System.out.println("O pagador não tem saldo insuficiente");
         }

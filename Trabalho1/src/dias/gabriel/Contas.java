@@ -9,7 +9,7 @@ public class Contas {
 
     private double saldo;
     private int id;
-    private static int gerarID=1;
+    private static int gerarID=0;
 
     public Contas(double Saldoini, String nomeUsuario){
     //this.usuarios=new Usuarios(nomeUsuario);

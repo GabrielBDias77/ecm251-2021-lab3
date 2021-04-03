@@ -1,4 +1,8 @@
 package dias.gabriel;
+
+//Gabriel B. Dias   Ra: 18.00487-3
+//Raphael Kalaes    Ra: 18.02011-9
+
 import java.awt.*;
 import java.util.Scanner;
 public class Menu {
@@ -34,7 +38,7 @@ public class Menu {
         c1 = new Contas(1000, "Neymar");
 
         Contas c2;
-        c2 = new Contas(250, "Robinho");
+        c2 = new Contas(250, "Soteldo");
 
         Contas c3;
         c3 = new Contas(3000, "Zé Love");

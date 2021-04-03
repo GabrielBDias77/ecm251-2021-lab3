@@ -13,6 +13,16 @@ public class Transacoes {
     public static void Transacao(Contas Paga, Contas Recebe, String QRCODE){
         String s = QRCODE;
         String[] dados = s.split( ";" ) ;
-        
+
+        //Convertendo o valor da transacao
+        double valorTransacao=Double.parseDouble(dados[0]);
+
+        if (valorTransacao<= Paga.getSaldo()) {
+            Paga.sacar(valorTransacao);
+            Recebe.depositar(valorTransacao);
+
+        }else {
+            System.out.println("O pagador não tem saldo insuficiente");
+        }
     }
 }

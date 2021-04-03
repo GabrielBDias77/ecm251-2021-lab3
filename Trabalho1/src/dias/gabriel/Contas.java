@@ -46,8 +46,7 @@ public class Contas {
     @Override
     public String toString() {
         return
-                "Nome Usuario =" +" "+ usuarios +
-                ", saldo ="+ " " + saldo +
-                '}';
+                "Nome Usuário:" +" "+ usuarios +" "+
+                "- saldo:"+ " " + String.format("%.2f",saldo) ;
     }
 }

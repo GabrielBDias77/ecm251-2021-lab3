@@ -61,9 +61,9 @@ public class Menu {
         c3 = new Contas(saldoini3, usuario3);
 
         System.out.println("Estado Inicial:");
-        System.out.println("Conta 1: " + c1.toString());
-        System.out.println("Conta 2: " + c2.toString());
-        System.out.println("Conta 3: " + c3.toString());
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
+        System.out.println( c3.toString());
 
         //1º Operação de Recebimento
         String opRecebimento1=Transacoes.NovoQRCODE(250,c1, c1.getUsuarios());
@@ -77,9 +77,9 @@ public class Menu {
         Transacoes.Transacao(c3,c2,opRecebimento2);
 
         System.out.println("Estado Final:");
-        System.out.println("Conta 1: " + c1.toString());
-        System.out.println("Conta 2: " + c2.toString());
-        System.out.println("Conta 3: " + c3.toString());
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
+        System.out.println(c3.toString());
 
 
     }

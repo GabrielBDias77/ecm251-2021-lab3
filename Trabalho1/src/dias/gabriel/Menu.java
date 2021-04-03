@@ -44,14 +44,21 @@ public class Menu {
         System.out.println("Informe o nome do usuário 3");
         String usuario3 = scanner.nextLine();
 
+        System.out.println("Informe o saldo inicial do usuario 1");
+        Double saldoini1=scanner.nextDouble();
+        System.out.println("Informe o saldo inicial do usuario 2");
+        Double saldoini2=scanner.nextDouble();
+        System.out.println("Informe o saldo inicial do usuario 3");
+        Double saldoini3=scanner.nextDouble();
+
         Contas c1;
-        c1 = new Contas(1000, usuario1);
+        c1 = new Contas(saldoini1, usuario1);
 
         Contas c2;
-        c2 = new Contas(250, usuario2);
+        c2 = new Contas(saldoini2, usuario2);
 
         Contas c3;
-        c3 = new Contas(3000, usuario3);
+        c3 = new Contas(saldoini3, usuario3);
 
         System.out.println("Estado Inicial:");
         System.out.println("Conta 1: " + c1.toString());

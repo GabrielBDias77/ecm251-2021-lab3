@@ -1,7 +1,7 @@
 package dias.gabriel;
 
-//Gabriel B. Dias   Ra: 18.00487-3
-//Raphael Kalaes    Ra: 18.02011-9
+//Gabriel B. Dias      Ra: 18.00487-3
+//Raphael G. Kalaes    Ra: 18.02011-9
 
 import java.awt.*;
 import java.util.Scanner;
@@ -34,14 +34,25 @@ public class Menu {
 //
     public void executarMenuID() {
 
+
+
+
+        System.out.println("Informe o nome do usuário 1");
+        String usuario1 = scanner.nextLine();
+        System.out.println("Informe o nome do usuário 2");
+        String usuario2 = scanner.nextLine();
+        System.out.println("Informe o nome do usuário 3");
+        String usuario3 = scanner.nextLine();
+
         Contas c1;
-        c1 = new Contas(1000, "Neymar");
+        c1 = new Contas(1000, usuario1);
 
         Contas c2;
-        c2 = new Contas(250, "Soteldo");
+        c2 = new Contas(250, usuario2);
 
         Contas c3;
-        c3 = new Contas(3000, "Zé Love");
+        c3 = new Contas(3000, usuario3);
+
         System.out.println("Estado Inicial:");
         System.out.println("Conta 1: " + c1.toString());
         System.out.println("Conta 2: " + c2.toString());

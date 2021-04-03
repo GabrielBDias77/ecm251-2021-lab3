@@ -1,7 +1,7 @@
 package dias.gabriel;
 
-//Gabriel B. Dias   Ra: 18.00487-3
-//Raphael Kalaes    Ra: 18.02011-9
+//Gabriel B. Dias      Ra: 18.00487-3
+//Raphael G. Kalaes    Ra: 18.02011-9
 
 public class Usuarios {
 
@@ -23,8 +23,9 @@ public class Usuarios {
     @Override
     public String toString() {
         return "" +
-                  nome  +
-                ", senha=" + senha +
-                ", email=" + email ;
+                  nome
+//                + ", senha=" + senha +
+//                ", email=" + email
+                ;
     }
 }

@@ -1,7 +1,7 @@
 package dias.gabriel;
 
-//Gabriel B. Dias   Ra: 18.00487-3
-//Raphael Kalaes    Ra: 18.02011-9
+//Gabriel B. Dias      Ra: 18.00487-3
+//Raphael G. Kalaes    Ra: 18.02011-9
 
 import java.util.Random;
 import java.util.Scanner;
@@ -13,7 +13,7 @@ public class Contas {
 
     private double saldo;
     private int id;
-    private static int gerarID=0;
+    private static int gerarID;
 
     public Contas(double Saldoini, String nomeUsuario){
     //this.usuarios=new Usuarios(nomeUsuario);
@@ -46,9 +46,8 @@ public class Contas {
     @Override
     public String toString() {
         return
-                "usuarios =" + usuarios +
-                ", saldo =" + saldo +
-                ", id =" + id +
+                "usuarios =" +" "+ usuarios +
+                ", saldo ="+ " " + saldo +
                 '}';
     }
 }

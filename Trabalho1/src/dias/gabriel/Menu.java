@@ -35,8 +35,6 @@ public class Menu {
     public void executarMenuID() {
 
 
-
-
         System.out.println("Informe o nome do usuário 1");
         String usuario1 = scanner.nextLine();
         System.out.println("Informe o nome do usuário 2");
@@ -52,13 +50,13 @@ public class Menu {
         Double saldoini3=scanner.nextDouble();
 
         Contas c1;
-        c1 = new Contas(saldoini1, usuario1);
+        c1 = new Contas(saldoini1,usuario1);
 
         Contas c2;
-        c2 = new Contas(saldoini2, usuario2);
+        c2 = new Contas(saldoini2,usuario2);
 
         Contas c3;
-        c3 = new Contas(saldoini3, usuario3);
+        c3 = new Contas(saldoini3,usuario3);
 
         System.out.println("Estado Inicial:");
         System.out.println(c1.toString());

@@ -9,6 +9,11 @@ import java.util.ArrayList;
 
 public class Arquivo {
 
+    /**
+     * metodo utilizado para criar o arquivo.csv
+     * @param list lista dos membros ja cadastrados
+     * @throws FileNotFoundException excecao de arquivo nao encontrado
+     */
     public static void criarArquivo(ArrayList<Membros> list) throws FileNotFoundException {
         File arquivo = new File("arquivo_super_secreto_nao_pode_abrir.csv");
 

@@ -9,7 +9,7 @@ import MAsK_S0c13ty.Interface.PostarMensagem;
 /**
  * Classe abstrata que mostra o que cada membro tem cadastrado.
  */
-public class Membros implements Aprsentacao, PostarMensagem {
+public class Membros<membros> implements Aprsentacao, PostarMensagem {
     protected String nome;
     protected String email;
     protected TipoMembro tipo;
@@ -96,11 +96,11 @@ public class Membros implements Aprsentacao, PostarMensagem {
     }
 
     @Override
-    public String apresentacao() {
-        return "Usuario: "+ this.id+"\n" +
-                this.nome +"\n" +
-                 " ("+ this.tipo +")\n"+
-                "e-mail: "+this.email;
+    public void apresentacao() {
+        System.out.println("Nome: "+
+                getNome() +"\n" +
+                 "\""+ getTipo() +"\"\n"+
+                "e-mail: "+getEmail()+"\n");
 
     }
 

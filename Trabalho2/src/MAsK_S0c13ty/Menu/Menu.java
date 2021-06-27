@@ -1,8 +1,7 @@
 package MAsK_S0c13ty.Menu;
 
 import MAsK_S0c13ty.Enum.Horario;
-import MAsK_S0c13ty.Model.BigBrothers;
-import MAsK_S0c13ty.Model.Membros;
+import MAsK_S0c13ty.Model.*;
 
 import java.util.*;
 
@@ -14,7 +13,10 @@ public class Menu {
     private static Horario horarioAtual = Horario.Normal;
     private boolean continuarExecucao;
     private Scanner scanner;
-    private LinkedList<Membros> listaMembros = new LinkedList<>();
+
+
+
+    private ArrayList<Membros> listaMembros = new ArrayList<>();
 
 
     /**
@@ -33,7 +35,7 @@ public class Menu {
      */
     private void exibirMenu() {
         System.out.println("\n\n===================================");
-        System.out.println("    Bem Vindo á MAsK_S0c13ty ");
+        System.out.println("            MAsK_S0c13ty ");
         System.out.println("===================================");
         System.out.println("Seu horário atual é: " + horarioAtual);
         System.out.println("1 - Saber seu horário atual");
@@ -85,17 +87,33 @@ public class Menu {
 
             case 5:
 
+
+                for (Membros membros : listaMembros) {
+                        System.out.println(membros.getNome() + ":" );
+                        membros.postar(horarioAtual);
+                        System.out.println("\n");
+                    }
+
+
                 break;
 
             case 6:
-                for (Membros membros : listaMembros)
+
+                int id = 0;
+                for(Membros membros: listaMembros){
+                    System.out.println("id: "+ id);
                     membros.apresentacao();
+                    id= id+1;}
                 break;
 
             case 7:
                 this.continuarExecucao = false;
 
                 break;
+
+
+
+
 
         }
     }
@@ -119,38 +137,27 @@ public class Menu {
                     "4- Big_Brothers");
             int escolha = scanner.nextInt();
             int id = 0;
-            try {
-                id = this.listaMembros.getLast().getId();
-            } catch (NoSuchElementException e) {
-                id = -1;
-            }
-            id++;
-
-            switch (escolha) {
+                        switch (escolha) {
                 case 1:
                     this.listaMembros.add(new MobileMembers(nome, email, id));
+                    System.out.println("Cadastro realizado com sucesso!");
                     break;
                 case 2:
                     this.listaMembros.add(new HeavyLifters(nome, email, id));
+                    System.out.println("Cadastro realizado com sucesso!");
                     break;
                 case 3:
                     this.listaMembros.add(new ScriptGuys(nome, email, id));
+                    System.out.println("Cadastro realizado com sucesso!");
                     break;
                 case 4:
                     this.listaMembros.add(new BigBrothers(nome, email, id));
+                    System.out.println("Cadastro realizado com sucesso!");
                     break;
                 default:
                     System.out.println("Erro no cadastro.Tente Novamente!");
 
 
-            }
-        else{
-                if (respostaCadastro.equals("Não") | respostaCadastro.equals("não") | respostaCadastro.equals("Nao") | respostaCadastro.equals("nao")) {
-
-                } else {
-                    System.out.println("\n Opcao invalida,tente novamente\n");
-
-                }
             }
 
 
@@ -165,21 +172,13 @@ public class Menu {
             String respostaRemover = scanner.next();
             if (respostaRemover.equals("Sim") | respostaRemover.equals("sim")) {
                 System.out.println("ID do usuario a ser removido:");
-                int i = scanner.nextInt();
-                if (i != 0) {
-                    listaMembros.remove(i);
-                    ArrumarLista();
-                } else {
-                    System.out.println("ID invalido!");
-                }
+                int id = scanner.nextInt();
+                listaMembros.remove(id);
+                System.out.println("Usuario removido com sucesso!");
+
             }
         }
 
-        private void ArrumarLista () {
-            for (int d = 0; d < listaMembros.size(); d++) {
-                listaMembros.get(d).setId(d);
-            }
-        }
 
 
 
@@ -195,6 +194,6 @@ public class Menu {
         }
 
     }
-}
+
 
 

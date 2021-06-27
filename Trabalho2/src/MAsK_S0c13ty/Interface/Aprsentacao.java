@@ -6,7 +6,6 @@ package MAsK_S0c13ty.Interface;
 public interface Aprsentacao {
     /**
      * Metodo utilizado pelos membros na hora de se apresentar.
-     * @return
      */
-    public String apresentacao();
+    public void apresentacao();
 }

@@ -3,6 +3,7 @@ package MAsK_S0c13ty.Menu;
 import MAsK_S0c13ty.Enum.Horario;
 import MAsK_S0c13ty.Model.*;
 
+import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
@@ -110,9 +111,7 @@ public class Menu {
                 this.continuarExecucao = false;
 
                 break;
-
-
-
+            
 
 
         }
@@ -136,8 +135,9 @@ public class Menu {
                     "3- Script_Guys\n" +
                     "4- Big_Brothers");
             int escolha = scanner.nextInt();
-            int id = 0;
-                        switch (escolha) {
+            System.out.println("Qual o id do membro?");
+            int id = scanner.nextInt();
+            switch (escolha) {
                 case 1:
                     this.listaMembros.add(new MobileMembers(nome, email, id));
                     System.out.println("Cadastro realizado com sucesso!");
@@ -159,8 +159,12 @@ public class Menu {
 
 
             }
-
-
+            Arquivo arquivo = new Arquivo();
+            try {
+                arquivo.criarArquivo(listaMembros);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -180,11 +184,9 @@ public class Menu {
         }
 
 
-
-
-
-
-
+    /**
+     * Metodo que faz o Menu rodar ate o usuario para-lo
+     */
     public Menu() {
 
             this.continuarExecucao = true;

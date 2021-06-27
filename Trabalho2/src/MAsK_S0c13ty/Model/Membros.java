@@ -95,6 +95,9 @@ public class Membros<membros> implements Aprsentacao, PostarMensagem {
         this.id = id;
     }
 
+    /**
+     * Metodo que permite aos usuarios se apresentarem
+     */
     @Override
     public void apresentacao() {
         System.out.println("Nome: "+
@@ -104,6 +107,10 @@ public class Membros<membros> implements Aprsentacao, PostarMensagem {
 
     }
 
+    /**
+     * metodo que permite aos usuarios postarem de acordo com o horario
+     * @param horario horario que se encontra o usuario
+     */
     @Override
     public void postar(Horario horario) {
         System.out.println(".");

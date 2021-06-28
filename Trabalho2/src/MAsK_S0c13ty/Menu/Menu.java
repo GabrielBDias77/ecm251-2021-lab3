@@ -111,10 +111,7 @@ public class Menu {
                 this.continuarExecucao = false;
 
                 break;
-
-
-
-        }
+                    }
     }
 
 

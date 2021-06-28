@@ -17,8 +17,6 @@ public class Arquivo {
     public static void criarArquivo(ArrayList<Membros> list) throws FileNotFoundException {
         File arquivo = new File("arquivo_super_secreto_nao_pode_abrir.csv");
 
-
-
     try {
         PrintWriter out = null;
 
@@ -47,4 +45,7 @@ public class Arquivo {
     FileNotFoundException fileNotFoundException) {
         fileNotFoundException.printStackTrace();
     }
-}}
+}
+
+}
+

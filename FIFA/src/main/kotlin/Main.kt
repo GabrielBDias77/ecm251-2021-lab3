@@ -2,10 +2,12 @@ import models.Jogador
 import java.sql.DriverManager
 
 fun main(args: Array<String>) {
+    val usuariodb:String
     val  senhadb: String
+    usuariodb = "root"
     senhadb = "TESTEfutreview"
     // cria a conexão com o banco
-    val connection = DriverManager.getConnection("jdbc:mysql://[(host=localhost,port=3306,user=root,password=${senhadb})]/fifa")
+    val connection = DriverManager.getConnection("jdbc:mysql://[(host=localhost,port=3306,user=${usuariodb},password=${senhadb})]/fifa")
     // cria um caminho para realizar queries sql no banco
     val sqlStatement = connection.createStatement()
     //executa uma query de busca

@@ -11,6 +11,7 @@ data class Geral(
     val defesa: Int,
     val estrelaDrible: Int,
     val estrelaPerna: Int,
+    val idJogador: Int
 )
 
 

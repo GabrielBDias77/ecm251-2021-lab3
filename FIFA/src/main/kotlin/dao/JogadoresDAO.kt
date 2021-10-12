@@ -1,20 +1,18 @@
 package dao
 
 import models.Jogador
-import java.sql.DriverManager
+import shared.ConectarDb
+
 
 class JogadoresDAO: GenericoDAO {
     override fun pegarUm(id: Int): Any {
-        val usuariodb:String
-        val  senhadb: String
-        usuariodb = "admin"
-        senhadb = "admin"
+
         // cria a conexão com o banco
-        val connection = DriverManager.getConnection("jdbc:mysql://[(host=10.33.162.153,port=3306,user=${usuariodb},password=${senhadb})]/FIFA")
+        ConectarDb.conectar()
         // cria um caminho para realizar queries sql no banco
-        val sqlStatement = connection.createStatement()
+        ConectarDb.sqlStatement()
         //executa uma query de busca
-        val resultSet = sqlStatement.executeQuery("Select * FROM Jogador WHERE idJogador==${id};")
+        val resultSet = ConectarDb.sqlStatement().executeQuery("Select * FROM Jogador WHERE idJogador=${id};")
         //passa pelos resultados obtidos
         var jogador: Jogador? = null
         while (resultSet.next()){
@@ -26,21 +24,19 @@ class JogadoresDAO: GenericoDAO {
             println("Jogador encontrado: ${jogador}")
         }
         resultSet.close()
-        connection.close()
+        ConectarDb.conectar().close()
         return  jogador!!
     }
 
     override fun pegarTodos(): List<Any> {
-        val usuariodb:String
-        val  senhadb: String
-        usuariodb = "admin"
-        senhadb = "admin"
+
+
         // cria a conexão com o banco
-        val connection = DriverManager.getConnection("jdbc:mysql://[(host=10.33.162.153,port=3306,user=${usuariodb},password=${senhadb})]/FIFA")
+        ConectarDb.conectar()
         // cria um caminho para realizar queries sql no banco
-        val sqlStatement = connection.createStatement()
+        ConectarDb.sqlStatement()
         //executa uma query de busca
-        val resultSet = sqlStatement.executeQuery("Select * FROM Jogador;")
+        val resultSet = ConectarDb.sqlStatement().executeQuery("Select * FROM Jogador;")
         //passa pelos resultados obtidos
         val jogadores = mutableListOf<Jogador>()
         while (resultSet.next()){
@@ -52,7 +48,7 @@ class JogadoresDAO: GenericoDAO {
         }
         println("Jogador encontrado: ${jogadores}")
         resultSet.close()
-        connection.close()
+        ConectarDb.conectar().close()
         return  jogadores
     }
 

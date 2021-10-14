@@ -8,47 +8,45 @@ class JogadoresDAO: GenericoDAO {
     override fun pegarUm(id: Int): Any {
 
         // cria a conexão com o banco
-        ConectarDb.conectar()
-        // cria um caminho para realizar queries sql no banco
-        ConectarDb.sqlStatement()
+        val conexao = ConexaoDao()
         //executa uma query de busca
-        val resultSet = ConectarDb.sqlStatement().executeQuery("Select * FROM Jogador WHERE idJogador=${id};")
+        val resultSet = conexao.executarQuery("Select * FROM Jogador WHERE idJogador=${id};")
         //passa pelos resultados obtidos
         var jogador: Jogador? = null
-        while (resultSet.next()){
+        while (resultSet?.next()!!){
             jogador = Jogador(
                 resultSet.getInt("idJogador"),
                 resultSet.getNString("nomeJogador"),
                 resultSet.getInt("idEquipe")
             )
+
             println("Jogador encontrado: ${jogador}")
         }
-        resultSet.close()
-        ConectarDb.conectar().close()
+        conexao.fechar()
         return  jogador!!
     }
 
     override fun pegarTodos(): List<Any> {
 
 
+
         // cria a conexão com o banco
-        ConectarDb.conectar()
-        // cria um caminho para realizar queries sql no banco
-        ConectarDb.sqlStatement()
+        val conexao = ConexaoDao()
         //executa uma query de busca
-        val resultSet = ConectarDb.sqlStatement().executeQuery("Select * FROM Jogador;")
+        val resultSet = conexao.executarQuery("Select * FROM Jogador;")
         //passa pelos resultados obtidos
         val jogadores = mutableListOf<Jogador>()
-        while (resultSet.next()){
+        while (resultSet?.next()!!){
             jogadores.add(Jogador(
                 resultSet.getInt("idJogador"),
                 resultSet.getNString("nomeJogador"),
                 resultSet.getInt("idEquipe")
             ))
         }
-        println("Jogador encontrado: ${jogadores}")
-        resultSet.close()
-        ConectarDb.conectar().close()
+        for (jogadores in jogadores){
+        println("${jogadores}")
+        }
+        conexao.fechar()
         return  jogadores
     }
 

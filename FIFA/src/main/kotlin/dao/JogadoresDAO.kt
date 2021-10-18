@@ -20,7 +20,28 @@ class JogadoresDAO: GenericoDAO {
             jogador = Jogador(
                 resultSet.getInt("idJogador"),
                 resultSet.getNString("nomeJogador"),
-                resultSet.getInt("idEquipe")
+                resultSet.getInt("idade"),
+                resultSet.getString("nomeComum"),
+                resultSet.getInt("altura"),
+                resultSet.getInt("peso"),
+                resultSet.getNString("aniversario"),
+                resultSet.getInt("idLiga"),
+                resultSet.getInt("idPais"),
+                resultSet.getInt("idEquipe"),
+                resultSet.getInt("idRaridade"),
+                resultSet.getNString("posicao"),
+                resultSet.getInt("estrelaDrible"),
+                resultSet.getInt("pernaRuim"),
+                resultSet.getNString("perna"),
+                resultSet.getNString("dedicacaoAtaque"),
+                resultSet.getNString("dedicacaoDefesa"),
+                resultSet.getInt("geral"),
+                resultSet.getInt("velocidade"),
+                resultSet.getInt("chute"),
+                resultSet.getInt("passe"),
+                resultSet.getInt("drible"),
+                resultSet.getInt("defesa"),
+                resultSet.getInt("fisico")
             )
 
             println("Jogador encontrado: ${jogador}")
@@ -53,7 +74,30 @@ class JogadoresDAO: GenericoDAO {
                     Jogador(
                         resultSet.getInt("idJogador"),
                         resultSet.getNString("nomeJogador"),
-                        resultSet.getInt("idEquipe")
+                        resultSet.getInt("idade"),
+                        resultSet.getString("nomeComum"),
+                        resultSet.getInt("altura"),
+                        resultSet.getInt("peso"),
+                        resultSet.getNString("aniversario"),
+                        resultSet.getInt("idLiga"),
+                        resultSet.getInt("idPais"),
+                        resultSet.getInt("idEquipe"),
+                        resultSet.getInt("idRaridade"),
+                        resultSet.getNString("posicao"),
+                        resultSet.getInt("estrelaDrible"),
+                        resultSet.getInt("pernaRuim"),
+                        resultSet.getNString("perna"),
+                        resultSet.getNString("dedicacaoAtaque"),
+                        resultSet.getNString("dedicacaoDefesa"),
+                        resultSet.getInt("geral"),
+                        resultSet.getInt("velocidade"),
+                        resultSet.getInt("chute"),
+                        resultSet.getInt("passe"),
+                        resultSet.getInt("drible"),
+                        resultSet.getInt("defesa"),
+                        resultSet.getInt("fisico")
+
+
                     )
                 )
             }
@@ -75,12 +119,33 @@ class JogadoresDAO: GenericoDAO {
         val conexao = ConexaoDao()
         val preparedStatement = conexao.getPreparedStatement("""
             INSERT INTO Jogador
-            (nomeJogador , idEquipe)
-            VALUES(?,?)
+            (nomeJogador, idade, nomeComum, altura, peso, aniversario, idLiga, idPais, idEquipe, idRaridade, posicao, estrelaDrible, pernaRuim, perna, dedicacaoAtaque, dedicacaoDefesa, geral, velocidade, chute, passe, drible, defesa, fisico )
+            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """.trimMargin())
         val jogador = objeto as Jogador
         preparedStatement?.setString(1,jogador.nomeJogador)
-        preparedStatement?.setInt(2,jogador.idEquipe)
+        preparedStatement?.setInt(2,jogador.idade)
+        preparedStatement?.setString(3,jogador.nomeComum)
+        preparedStatement?.setInt(4,jogador.altura)
+        preparedStatement?.setInt(5,jogador.peso)
+        preparedStatement?.setString(6,jogador.aniversario)
+        preparedStatement?.setInt(7,jogador.idLiga)
+        preparedStatement?.setInt(8,jogador.idPais)
+        preparedStatement?.setInt(9,jogador.idEquipe)
+        preparedStatement?.setInt(10,jogador.idRaridade)
+        preparedStatement?.setString(11,jogador.posicao)
+        preparedStatement?.setInt(12,jogador.estrelaDrible)
+        preparedStatement?.setInt(13,jogador.pernaRuim)
+        preparedStatement?.setString(14,jogador.perna)
+        preparedStatement?.setString(15,jogador.dedicacaoAtaque)
+        preparedStatement?.setString(16,jogador.dedicacaoDefesa)
+        preparedStatement?.setInt(17,jogador.geral)
+        preparedStatement?.setInt(18,jogador.velocidade)
+        preparedStatement?.setInt(19,jogador.chute)
+        preparedStatement?.setInt(20,jogador.passe)
+        preparedStatement?.setInt(21,jogador.drible)
+        preparedStatement?.setInt(22,jogador.defesa)
+        preparedStatement?.setInt(23,jogador.fisico)
         preparedStatement?.executeUpdate()
         //conexao.commit()
         conexao.fechar()
@@ -89,14 +154,35 @@ class JogadoresDAO: GenericoDAO {
     override fun inserirVarios(Lista: List<Any>) {
         val conexao = ConexaoDao()
         val preparedStatement = conexao.getPreparedStatement("""
-            INSERT INTO Jogador
-            (nomeJogador , idEquipe)
-            VALUES(?,?)
+             INSERT INTO Jogador
+            (nomeJogador, idade, nomeComum, altura, peso, aniversario, idLiga, idPais, idEquipe, idRaridade, posicao, estrelaDrible, pernaRuim, perna, dedicacaoAtaque, dedicacaoDefesa, geral, velocidade, chute, passe, drible, defesa, fisico )
+            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """.trimMargin())
         for (objeto in Lista) {
             val jogador = objeto as Jogador
-            preparedStatement?.setString(1, jogador.nomeJogador)
-            preparedStatement?.setInt(2, jogador.idEquipe)
+            preparedStatement?.setString(1,jogador.nomeJogador)
+            preparedStatement?.setInt(2,jogador.idade)
+            preparedStatement?.setString(3,jogador.nomeComum)
+            preparedStatement?.setInt(4,jogador.altura)
+            preparedStatement?.setInt(5,jogador.peso)
+            preparedStatement?.setString(6,jogador.aniversario)
+            preparedStatement?.setInt(7,jogador.idLiga)
+            preparedStatement?.setInt(8,jogador.idPais)
+            preparedStatement?.setInt(9,jogador.idEquipe)
+            preparedStatement?.setInt(10,jogador.idRaridade)
+            preparedStatement?.setString(11,jogador.posicao)
+            preparedStatement?.setInt(12,jogador.estrelaDrible)
+            preparedStatement?.setInt(13,jogador.pernaRuim)
+            preparedStatement?.setString(14,jogador.perna)
+            preparedStatement?.setString(15,jogador.dedicacaoAtaque)
+            preparedStatement?.setString(16,jogador.dedicacaoDefesa)
+            preparedStatement?.setInt(17,jogador.geral)
+            preparedStatement?.setInt(18,jogador.velocidade)
+            preparedStatement?.setInt(19,jogador.chute)
+            preparedStatement?.setInt(20,jogador.passe)
+            preparedStatement?.setInt(21,jogador.drible)
+            preparedStatement?.setInt(22,jogador.defesa)
+            preparedStatement?.setInt(23,jogador.fisico)
             preparedStatement?.executeUpdate()
             //conexao.commit()
         }
@@ -107,25 +193,46 @@ class JogadoresDAO: GenericoDAO {
         val conexao = ConexaoDao()
         val preparedStatement = conexao.getPreparedStatement("""
             UPDATE Jogador
-            SET nomeJogador = ? ,idEquipe = ?
+            SET nomeJogador = ?, idade = ?, nomeComum = ?, altura = ?, peso = ?, aniversario = ?, idLiga = ?, idPais = ?, idEquipe = ?, idRaridade = ?, posicao = ?, estrelaDrible = ?, pernaRuim = ?, perna = ?, dedicacaoAtaque = ?, dedicacaoDefesa = ?, geral = ?, velocidade = ?, chute = ?, passe = ?, drible = ?, defesa = ?, fisico = ?
             Where id = ?;
             """.trimMargin())
         val jogador = objeto as Jogador
         preparedStatement?.setString(1,jogador.nomeJogador)
-        preparedStatement?.setInt(2,jogador.idEquipe)
-        preparedStatement?.setInt(3,jogador.idJogador)
+        preparedStatement?.setInt(2,jogador.idade)
+        preparedStatement?.setString(3,jogador.nomeComum)
+        preparedStatement?.setInt(4,jogador.altura)
+        preparedStatement?.setInt(5,jogador.peso)
+        preparedStatement?.setString(6,jogador.aniversario)
+        preparedStatement?.setInt(7,jogador.idLiga)
+        preparedStatement?.setInt(8,jogador.idPais)
+        preparedStatement?.setInt(9,jogador.idEquipe)
+        preparedStatement?.setInt(10,jogador.idRaridade)
+        preparedStatement?.setString(11,jogador.posicao)
+        preparedStatement?.setInt(12,jogador.estrelaDrible)
+        preparedStatement?.setInt(13,jogador.pernaRuim)
+        preparedStatement?.setString(14,jogador.perna)
+        preparedStatement?.setString(15,jogador.dedicacaoAtaque)
+        preparedStatement?.setString(16,jogador.dedicacaoDefesa)
+        preparedStatement?.setInt(17,jogador.geral)
+        preparedStatement?.setInt(18,jogador.velocidade)
+        preparedStatement?.setInt(19,jogador.chute)
+        preparedStatement?.setInt(20,jogador.passe)
+        preparedStatement?.setInt(21,jogador.drible)
+        preparedStatement?.setInt(22,jogador.defesa)
+        preparedStatement?.setInt(23,jogador.fisico)
+        preparedStatement?.setInt(24,jogador.idJogador)
         preparedStatement?.executeUpdate()
         //conexao.commit()
         conexao.fechar()
     }
 
-    override fun deletar(IdJogador: Int) {
+    override fun deletar(idJogador: Int) {
         val conexao = ConexaoDao()
         val preparedStatement = conexao.getPreparedStatement("""
             DELETE FROM Jogador
-            Where id = ?;
+            Where idJogador = ?;
             """.trimMargin())
-        preparedStatement?.setInt(1,IdJogador)
+        preparedStatement?.setInt(1,idJogador)
         preparedStatement?.executeUpdate()
         //conexao.commit()
         conexao.fechar()

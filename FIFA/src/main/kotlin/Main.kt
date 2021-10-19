@@ -4,7 +4,7 @@ import models.Jogador
 
 fun main(args: Array<String>) {
     val jogadoresDao = JogadoresDAO()
-   // jogadoresDao.pegarTodos()
+    jogadoresDao.pegarTodos()
 
 // jogadoresDao.inserirUm(Jogador(0,"Neymar",27,"Neymar",178,80,"1985-12-20",2,1,1,1,"LW",5,5,"Right","high","low",91,99,85,87,87,87,87))
 //    jogadoresDao.inserirVarios(listOf(Jogador(0,"Kevin De Bruyne",3),Jogador(0,"Lewandowski",4)))

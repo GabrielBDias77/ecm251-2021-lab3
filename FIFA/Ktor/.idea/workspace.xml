@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b8243eb6-65bd-4b68-94ca-86d9cde9fb5d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java_8_0_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java_8_0_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_5_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_5_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_mariadb_jdbc_mariadb_java_client_2_7_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_mariadb_jdbc_mariadb_java_client_2_7_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixar db/consoleApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixar db/consoleApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__com_github_jkcclemens_khttp__0_1_0_g39f76b4_30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__com_github_jkcclemens_khttp__0_1_0_g39f76b4_30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_5_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_5_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_5_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_5_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_5_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_5_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_1_5_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_1_5_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_junit_1_5_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_junit_1_5_31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_json_json_20190722.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/libraries/Maven__org_json_json_20190722.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baixarDb/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baixarDb/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../consoleApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../consoleApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ola_mundo/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ola_mundo/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ola_mundo/android/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../ola_mundo/android/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ola_mundo/ios/Runner/GeneratedPluginRegistrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ola_mundo/ios/Runner/GeneratedPluginRegistrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ola_mundo/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/../ola_mundo/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ola_mundo/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ola_mundo/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/dao/AvaliacaoDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/dao/AvaliacaoDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/dao/ConexaoDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/dao/ConexaoDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/dao/EquipeDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/dao/EquipeDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/dao/GenericoDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/dao/GenericoDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/dao/JogadoresDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/dao/JogadoresDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/dao/LigaDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/dao/LigaDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/dao/PaisDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/dao/PaisDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/dao/RaridadeDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/dao/RaridadeDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/dao/UsuarioDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/dao/UsuarioDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/models/Avaliacao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/models/Avaliacao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/models/Equipe.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/models/Equipe.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/models/Jogador.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/models/Jogador.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/models/Liga.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/models/Liga.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/models/Pais.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/models/Pais.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/models/Usuario.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/models/Usuario.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/kotlin/shared/ConectarDb.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/kotlin/shared/ConectarDb.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="20Bz6MnrCdFkDBwCsXFFQhaymhV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="RunManager">
+    <configuration name="ApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.maua.ApplicationKt" />
+      <module name="br-maua-ktor-sample" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.ApplicationKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8243eb6-65bd-4b68-94ca-86d9cde9fb5d" name="Changes" comment="" />
+      <created>1635532605275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635532605275</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

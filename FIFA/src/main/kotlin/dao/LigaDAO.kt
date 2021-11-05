@@ -1,7 +1,10 @@
 package dao
 
+import kotlinx.serialization.*
 import models.Liga
 
+
+@Serializable
 class LigaDAO: GenericoDAO {
     override fun pegarUm(id: Int): Any {
 

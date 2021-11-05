@@ -11,9 +11,7 @@
             <array />
           </option>
           <option name="pluginClasspaths">
-            <array>
-              <option value="$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar" />
-            </array>
+            <array />
           </option>
           <option name="errors">
             <ArgumentParseErrors />
@@ -70,8 +68,8 @@
     <orderEntry type="library" name="Maven: io.netty:netty-transport-native-epoll:4.1.63.Final" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.6" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.6" level="project" />
-    <orderEntry type="library" name="Maven: org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.3.0" level="project" />
+    <orderEntry type="library" name="Maven: io.ktor:ktor-serialization:1.6.4" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.2.2" level="project" />
   </component>
 </module>

@@ -1,8 +1,8 @@
 package models
 
-import java.sql.Date
-import java.util.*
+import kotlinx.serialization.*
 
+@Serializable
 data class Jogador(
     val idJogador: Int,
     val nomeJogador:String,

@@ -4,6 +4,8 @@ import dao.*
 import io.ktor.application.*
 import io.ktor.response.*
 import io.ktor.routing.*
+import models.Jogador
+import models.Liga
 
 fun Application.configureRouting() {
     val avaliacaoDao = AvaliacaoDAO()
@@ -77,6 +79,9 @@ fun Application.configureRouting() {
             val id: String? = call.parameters["id"]
             val num = id?.toInt()
             call.respondText("${usuarioDao.pegarUm(num!!)}")
+        }
+        get("/Json"){
+            call.respond(Liga(1,"jorge",2))
         }
 
     }

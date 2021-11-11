@@ -1,5 +1,6 @@
 package dao
 
+import com.google.gson.GsonBuilder
 import models.Usuario
 
 class UsuarioDAO: GenericoDAO {
@@ -22,7 +23,9 @@ class UsuarioDAO: GenericoDAO {
 
                 )
 
-                println("Usuario encontrado: ${usuario}")
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonUsuario: String = gsonPretty.toJson(usuario)
+                println(jsonUsuario)
             }
             conexao.fechar()
         }
@@ -56,7 +59,9 @@ class UsuarioDAO: GenericoDAO {
                 )
             }
             for (usuarios in usuarios) {
-                println("${usuarios}")
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonUsuarios: String = gsonPretty.toJson(usuarios)
+                println(jsonUsuarios)
             }
 
         }

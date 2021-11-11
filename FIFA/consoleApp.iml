@@ -71,5 +71,7 @@
     <orderEntry type="library" name="Maven: io.ktor:ktor-serialization:1.6.4" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: io.ktor:ktor-gson:1.6.4" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.6" level="project" />
   </component>
 </module>

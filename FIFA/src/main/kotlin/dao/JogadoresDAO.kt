@@ -1,5 +1,6 @@
 package dao
 
+import com.google.gson.GsonBuilder
 import models.Jogador
 import kotlinx.serialization.*
 
@@ -44,7 +45,10 @@ class JogadoresDAO: GenericoDAO {
                 resultSet.getInt("fisico")
             )
 
-            println("Jogador encontrado: ${jogador}")
+
+            val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+            val jsonJogador: String = gsonPretty.toJson(jogador)
+            println(jsonJogador)
         }
         conexao.fechar()
     }
@@ -100,7 +104,9 @@ class JogadoresDAO: GenericoDAO {
                 )
             }
             for (jogadores in jogadores) {
-                println("${jogadores}")
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonJogadores: String = gsonPretty.toJson(jogadores)
+                println(jsonJogadores)
             }
 
         }

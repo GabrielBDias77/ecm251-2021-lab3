@@ -1,12 +1,19 @@
 package dao
 
-import kotlinx.serialization.*
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
+import kotlinx.serialization.Serializable
 import models.Liga
 
 
 @Serializable
 class LigaDAO: GenericoDAO {
+
+
+
+
     override fun pegarUm(id: Int): Any {
+
 
         var liga: Liga? = null
         var conexao : ConexaoDao? = null
@@ -23,8 +30,10 @@ class LigaDAO: GenericoDAO {
                     resultSet.getInt("idPais")
 
                 )
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonLiga: String = gsonPretty.toJson(liga)
+                println(jsonLiga)
 
-                println("Liga encontrada: ${liga}")
             }
             conexao.fechar()
         }
@@ -39,6 +48,8 @@ class LigaDAO: GenericoDAO {
     }
 
     override fun pegarTodos(): List<Any> {
+        val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+
         val ligas = mutableListOf<Liga>()
         var conexao : ConexaoDao? = null
         try {
@@ -57,7 +68,8 @@ class LigaDAO: GenericoDAO {
                 )
             }
             for (ligas in ligas) {
-                println("${ligas}")
+                val jsonLigas: String = gsonPretty.toJson(ligas)
+                println(jsonLigas)
             }
 
         }

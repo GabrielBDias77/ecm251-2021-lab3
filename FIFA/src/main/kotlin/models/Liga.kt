@@ -9,3 +9,4 @@ data class Liga(
     val nomeLiga: String,
     val idPais: Int
 )
+

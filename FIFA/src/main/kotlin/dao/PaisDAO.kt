@@ -1,5 +1,6 @@
 package dao
 
+import com.google.gson.GsonBuilder
 import models.Pais
 
 class PaisDAO: GenericoDAO {
@@ -19,7 +20,9 @@ class PaisDAO: GenericoDAO {
                     resultSet.getString("nomePais")
                 )
 
-                println("Pais encontrado: ${pais}")
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonPais: String = gsonPretty.toJson(pais)
+                println(jsonPais)
             }
             conexao.fechar()
         }
@@ -51,7 +54,9 @@ class PaisDAO: GenericoDAO {
                 )
             }
             for (paises in paises) {
-                println("${paises}")
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonPaises: String = gsonPretty.toJson(paises)
+                println(jsonPaises)
             }
 
         }

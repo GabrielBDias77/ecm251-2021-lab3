@@ -1,5 +1,6 @@
 package dao
 
+import com.google.gson.GsonBuilder
 import models.Avaliacao
 
 class AvaliacaoDAO: GenericoDAO {
@@ -23,7 +24,9 @@ class AvaliacaoDAO: GenericoDAO {
 
                 )
 
-                println("Avaliacao encontrada: ${avaliacao}")
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonAvaliacao: String = gsonPretty.toJson(avaliacao)
+                println(jsonAvaliacao)
             }
             conexao.fechar()
         }
@@ -38,6 +41,7 @@ class AvaliacaoDAO: GenericoDAO {
     }
 
     override fun pegarTodos(): List<Any> {
+
         val avaliacoes = mutableListOf<Avaliacao>()
         var conexao : ConexaoDao? = null
         try {
@@ -57,7 +61,9 @@ class AvaliacaoDAO: GenericoDAO {
                 )
             }
             for (avaliacoes in avaliacoes) {
-                println("${avaliacoes}")
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonAvaliacoes: String = gsonPretty.toJson(avaliacoes)
+                println(jsonAvaliacoes)
             }
 
         }

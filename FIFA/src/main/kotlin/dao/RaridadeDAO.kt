@@ -1,5 +1,6 @@
 package dao
 
+import com.google.gson.GsonBuilder
 import models.Raridade
 
 class RaridadeDAO: GenericoDAO {
@@ -19,7 +20,9 @@ class RaridadeDAO: GenericoDAO {
                     resultSet.getString("tipo")
                 )
 
-                println("Raridade encontrada: ${raridade}")
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonRaridade: String = gsonPretty.toJson(raridade)
+                println(jsonRaridade)
             }
             conexao.fechar()
         }
@@ -51,7 +54,9 @@ class RaridadeDAO: GenericoDAO {
                 )
             }
             for (raridades in raridades) {
-                println("${raridades}")
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonRaridades: String = gsonPretty.toJson(raridades)
+                println(jsonRaridades)
             }
 
         }

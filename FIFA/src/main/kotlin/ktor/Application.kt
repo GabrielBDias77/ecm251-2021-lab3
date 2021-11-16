@@ -4,10 +4,8 @@ import io.ktor.application.*
 import io.ktor.features.*
 import io.ktor.gson.*
 import io.ktor.http.*
-import io.ktor.serialization.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
-import javax.naming.AuthenticationException
 
 
 fun main() {
@@ -17,9 +15,15 @@ fun main() {
             gson()
         }
         install(CORS){
+            method(HttpMethod.Get)
             method(HttpMethod.Options)
+            method(HttpMethod.Put)
+            allowXHttpMethodOverride()
+            allowHeaders { true }
+            exposeHeader(HttpHeaders.AccessControlAllowOrigin)
             anyHost()
         }
+
 
 
         configureRouting()

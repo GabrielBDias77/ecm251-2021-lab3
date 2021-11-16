@@ -107,6 +107,7 @@ class JogadoresDAO: GenericoDAO {
                 val gsonPretty = GsonBuilder().setPrettyPrinting().create()
                 val jsonJogadores: String = gsonPretty.toJson(jogadores)
                 println(jsonJogadores)
+//                println("${jogadores}")
             }
 
         }

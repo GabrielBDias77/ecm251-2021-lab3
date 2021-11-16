@@ -5,7 +5,11 @@ class Networkhelper {
   static const jogadorRepositoryURL = "$webSiteURL/Jogador";
 
   static Future getData(url) async {
-    http.Response response = await http.get(Uri.parse(url));
+    http.Response response = await http.get(Uri.parse(url), headers: {
+      "Accept": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    });
+
     if (response.statusCode == 200) {
       // print(response.statusCode);
       return response.body;

@@ -25,7 +25,7 @@ class JogadorListScroll extends StatefulWidget {
 }
 
 class _JogadorListScrollState extends State<JogadorListScroll> {
-  final _Jogadorlist = <Jogador>[
+  final _jogadorlist = <Jogador>[
     Jogador(
         idJogador: 114,
         nomeJogador: "nomeJogador",
@@ -88,7 +88,7 @@ class _JogadorListScrollState extends State<JogadorListScroll> {
       body: _buildJogadorList(),
       floatingActionButton: FloatingActionButton(
         onPressed: _requestJogadorList,
-        tooltip: 'Load Film List',
+        tooltip: 'Load Player List',
         child: const Icon(Icons.add),
       ),
     );
@@ -100,7 +100,7 @@ class _JogadorListScrollState extends State<JogadorListScroll> {
     filmRequest.then((value) {
       final parsedList = Jogador.listFromJson(value);
       setState(() {
-        _Jogadorlist.addAll(parsedList);
+        _jogadorlist.addAll(parsedList);
       });
     });
   }
@@ -108,11 +108,11 @@ class _JogadorListScrollState extends State<JogadorListScroll> {
   Widget _buildJogadorList() {
     return ListView.builder(
         padding: const EdgeInsets.all(16),
-        itemCount: _Jogadorlist.length,
+        itemCount: _jogadorlist.length,
         itemBuilder: (BuildContext _contex, int i) {
           return ListTile(
-            title: Text(_Jogadorlist[i].nomeJogador),
-            subtitle: Text(_Jogadorlist[i].nomeComum),
+            title: Text(_jogadorlist[i].nomeJogador),
+            subtitle: Text(_jogadorlist[i].posicao),
           );
         });
   }

@@ -33,6 +33,19 @@ fun Application.configureRouting() {
                 val num = id?.toInt()
                 call.respond(jogadoresDao.pegarUm(num!!))
             }
+            get("/Ouro") {
+
+                call.respond(jogadoresDao.pegarOuro())
+            }
+            get("/Prata") {
+
+                call.respond(jogadoresDao.pegarPrata())
+            }
+            get("/Bronze") {
+
+                call.respond(jogadoresDao.pegarBronze())
+            }
+
             post("/add") {
                 val formParameters = call.receiveParameters()
                 val id = formParameters["idJogador"]!!.toInt()

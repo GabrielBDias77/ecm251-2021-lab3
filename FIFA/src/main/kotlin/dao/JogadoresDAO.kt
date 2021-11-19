@@ -120,6 +120,178 @@ class JogadoresDAO: GenericoDAO {
         return  jogadores
     }
 
+     fun pegarOuro(): List<Any> {
+        val jogadores = mutableListOf<Jogador>()
+        var conexao : ConexaoDao? = null
+        try {
+            // cria a conexão com o banco
+            conexao = ConexaoDao()
+            //executa uma query de busca
+            val resultSet = conexao.executarQuery("SELECT * FROM Jogador WHERE geral >= 75;")
+            //passa pelos resultados obtidos
+            while (resultSet?.next()!!) {
+                jogadores.add(
+                    Jogador(
+                        resultSet.getInt("idJogador"),
+                        resultSet.getString("nomeJogador"),
+                        resultSet.getInt("idade"),
+                        resultSet.getString("nomeComum"),
+                        resultSet.getInt("altura"),
+                        resultSet.getInt("peso"),
+                        resultSet.getString("aniversario"),
+                        resultSet.getInt("idLiga"),
+                        resultSet.getInt("idPais"),
+                        resultSet.getInt("idEquipe"),
+                        resultSet.getInt("idRaridade"),
+                        resultSet.getString("posicao"),
+                        resultSet.getInt("estrelaDrible"),
+                        resultSet.getInt("pernaRuim"),
+                        resultSet.getString("perna"),
+                        resultSet.getString("dedicacaoAtaque"),
+                        resultSet.getString("dedicacaoDefesa"),
+                        resultSet.getInt("geral"),
+                        resultSet.getInt("velocidade"),
+                        resultSet.getInt("chute"),
+                        resultSet.getInt("passe"),
+                        resultSet.getInt("drible"),
+                        resultSet.getInt("defesa"),
+                        resultSet.getInt("fisico")
+
+
+                    )
+                )
+            }
+            for (jogadores in jogadores) {
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonJogadores: String = gsonPretty.toJson(jogadores)
+                println(jsonJogadores)
+//                println("${jogadores}")
+            }
+
+        }
+        catch (exception : Exception){
+            exception.printStackTrace()
+        }
+        finally {
+            conexao?.fechar()
+        }
+        return  jogadores
+    }
+
+    fun pegarPrata(): List<Any> {
+        val jogadores = mutableListOf<Jogador>()
+        var conexao : ConexaoDao? = null
+        try {
+            // cria a conexão com o banco
+            conexao = ConexaoDao()
+            //executa uma query de busca
+            val resultSet = conexao.executarQuery("SELECT * FROM Jogador WHERE geral BETWEEN 65 AND 74;")
+            //passa pelos resultados obtidos
+            while (resultSet?.next()!!) {
+                jogadores.add(
+                    Jogador(
+                        resultSet.getInt("idJogador"),
+                        resultSet.getString("nomeJogador"),
+                        resultSet.getInt("idade"),
+                        resultSet.getString("nomeComum"),
+                        resultSet.getInt("altura"),
+                        resultSet.getInt("peso"),
+                        resultSet.getString("aniversario"),
+                        resultSet.getInt("idLiga"),
+                        resultSet.getInt("idPais"),
+                        resultSet.getInt("idEquipe"),
+                        resultSet.getInt("idRaridade"),
+                        resultSet.getString("posicao"),
+                        resultSet.getInt("estrelaDrible"),
+                        resultSet.getInt("pernaRuim"),
+                        resultSet.getString("perna"),
+                        resultSet.getString("dedicacaoAtaque"),
+                        resultSet.getString("dedicacaoDefesa"),
+                        resultSet.getInt("geral"),
+                        resultSet.getInt("velocidade"),
+                        resultSet.getInt("chute"),
+                        resultSet.getInt("passe"),
+                        resultSet.getInt("drible"),
+                        resultSet.getInt("defesa"),
+                        resultSet.getInt("fisico")
+
+
+                    )
+                )
+            }
+            for (jogadores in jogadores) {
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonJogadores: String = gsonPretty.toJson(jogadores)
+                println(jsonJogadores)
+//                println("${jogadores}")
+            }
+
+        }
+        catch (exception : Exception){
+            exception.printStackTrace()
+        }
+        finally {
+            conexao?.fechar()
+        }
+        return  jogadores
+    }
+    fun pegarBronze(): List<Any> {
+        val jogadores = mutableListOf<Jogador>()
+        var conexao : ConexaoDao? = null
+        try {
+            // cria a conexão com o banco
+            conexao = ConexaoDao()
+            //executa uma query de busca
+            val resultSet = conexao.executarQuery("SELECT * FROM Jogador WHERE geral <= 65;")
+            //passa pelos resultados obtidos
+            while (resultSet?.next()!!) {
+                jogadores.add(
+                    Jogador(
+                        resultSet.getInt("idJogador"),
+                        resultSet.getString("nomeJogador"),
+                        resultSet.getInt("idade"),
+                        resultSet.getString("nomeComum"),
+                        resultSet.getInt("altura"),
+                        resultSet.getInt("peso"),
+                        resultSet.getString("aniversario"),
+                        resultSet.getInt("idLiga"),
+                        resultSet.getInt("idPais"),
+                        resultSet.getInt("idEquipe"),
+                        resultSet.getInt("idRaridade"),
+                        resultSet.getString("posicao"),
+                        resultSet.getInt("estrelaDrible"),
+                        resultSet.getInt("pernaRuim"),
+                        resultSet.getString("perna"),
+                        resultSet.getString("dedicacaoAtaque"),
+                        resultSet.getString("dedicacaoDefesa"),
+                        resultSet.getInt("geral"),
+                        resultSet.getInt("velocidade"),
+                        resultSet.getInt("chute"),
+                        resultSet.getInt("passe"),
+                        resultSet.getInt("drible"),
+                        resultSet.getInt("defesa"),
+                        resultSet.getInt("fisico")
+
+
+                    )
+                )
+            }
+            for (jogadores in jogadores) {
+                val gsonPretty = GsonBuilder().setPrettyPrinting().create()
+                val jsonJogadores: String = gsonPretty.toJson(jogadores)
+                println(jsonJogadores)
+//                println("${jogadores}")
+            }
+
+        }
+        catch (exception : Exception){
+            exception.printStackTrace()
+        }
+        finally {
+            conexao?.fechar()
+        }
+        return  jogadores
+    }
     override fun inserirUm(objeto: Any) {
         val conexao = ConexaoDao()
         val jogador = objeto as Jogador

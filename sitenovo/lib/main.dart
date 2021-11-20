@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 import 'jogador.dart';
@@ -95,8 +97,7 @@ class _JogadorListScrollState extends State<JogadorListScroll> {
   }
 
   void _requestJogadorList() {
-    Future filmRequest =
-        Networkhelper.getData(Networkhelper.jogadorRepositoryURL);
+    Future filmRequest = NetworkHelper.getData();
     filmRequest.then((value) {
       final parsedList = Jogador.listFromJson(value);
       setState(() {

@@ -1,21 +1,19 @@
+import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-class Networkhelper {
-  static const webSiteURL = "http://localhost";
-  static const jogadorRepositoryURL = "$webSiteURL/Jogador";
+class NetworkHelper {
+  final String url;
+  NetworkHelper({required this.url});
 
-  static Future getData(url) async {
-    http.Response response = await http.get(Uri.parse(url), headers: {
-      "Accept": "application/json",
-      "Access-Control-Allow-Origin": "*"
-    });
-
+  static Future getData() async {
+    http.Response response = await http.get(Uri.parse("localhost/Jogador"));
     if (response.statusCode == 200) {
-      // print(response.statusCode);
-      return response.body;
+      //Resultado da requisição
+      return jsonDecode(response.body);
     } else {
-      throw Exception(
-          'Http Get ERROR:${response.statusCode}: ${response.reasonPhrase}');
+      // ignore: avoid_print
+      print(response.statusCode);
+      return null;
     }
   }
 }

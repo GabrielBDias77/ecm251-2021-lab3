@@ -1,5 +1,6 @@
 import 'dart:html';
 import 'package:flutter/material.dart';
+import 'JogadorLista.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,7 @@ class MinhaPagina extends StatelessWidget {
         title: (Text('Review FIFA 22')),
         actions: [
           MaterialButton(
-            color: Colors.pink,
+            color: Colors.pinkAccent,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(20.0))),
             onPressed: () {},
@@ -41,7 +42,7 @@ class MinhaPagina extends StatelessWidget {
             ),
           ),
           MaterialButton(
-            color: Colors.pink,
+            color: Colors.pinkAccent,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(20.0))),
             onPressed: () {},
@@ -59,8 +60,9 @@ class MinhaPagina extends StatelessWidget {
         // space to fit everything.
         child: ListView(
           // Important: Remove any padding from the ListView.
-          padding: EdgeInsets.zero,
+          padding: const EdgeInsets.symmetric(vertical: 10.0),
           children: [
+            const Spacer(),
             ListTile(
               leading: Image.asset('Imagens/Icon.png'),
               title: const Text('Icon'),
@@ -68,7 +70,10 @@ class MinhaPagina extends StatelessWidget {
                 // Update the state of the app
                 // ...
                 // Then close the drawer
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MeuApp()),
+                );
               },
             ),
             ListTile(
@@ -78,7 +83,10 @@ class MinhaPagina extends StatelessWidget {
                 // Update the state of the app
                 // ...
                 // Then close the drawer
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MeuApp()),
+                );
               },
             ),
             ListTile(
@@ -88,7 +96,10 @@ class MinhaPagina extends StatelessWidget {
                 // Update the state of the app
                 // ...
                 // Then close the drawer
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MeuApp()),
+                );
               },
             ),
             ListTile(
@@ -98,7 +109,10 @@ class MinhaPagina extends StatelessWidget {
                 // Update the state of the app
                 // ...
                 // Then close the drawer
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MeuApp()),
+                );
               },
             ),
           ],

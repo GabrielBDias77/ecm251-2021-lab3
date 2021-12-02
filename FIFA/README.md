@@ -1,16 +1,14 @@
-# site_review
+# BackEnd
 
-A new Flutter project.
+Backend do nosso projeto de review de cartas do Fifa.
 
-## Getting Started
+## Passo a Passo da Criação:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Criação do banco de dados
+- Começo do backend (criar as variaveis do banco em models)
+- Criar uma conexão ao banco (usando o JDBC)
+- Implementação de classes que retiram informações do banco
+- Criação de todo a manipulação do banco usando DAO
+- Criar uma REST API para enviar os dados manipulados pelo banco ao frontend
+- Transformação da informação obtida usando o JSON
+- Criação de rotas para todas as informações necessarias ao projeto.

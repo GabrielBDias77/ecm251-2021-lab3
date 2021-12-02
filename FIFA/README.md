@@ -1,6 +1,6 @@
 # BackEnd
 
-Backend do nosso projeto de review de cartas do Fifa.
+BackEnd do nosso projeto de review de cartas do Fifa.
 
 ## Passo a Passo da Criação:
 
@@ -12,3 +12,9 @@ Backend do nosso projeto de review de cartas do Fifa.
 - Criar uma REST API para enviar os dados manipulados pelo banco ao frontend.
 - Transformação da informação obtida usando o JSON.
 - Criação de rotas para todas as informações necessarias ao projeto.
+
+## Para começar:
+
+- Baixar a máquina virtual 'MariaDB.ova' e iniciá-la
+- login: admin / Password: admin
+- Observar o IP gerado pela máquina virtual e se necessário alterá-lo em 

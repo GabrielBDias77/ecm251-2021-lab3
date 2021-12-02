@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'JogadorLista.dart';
 
@@ -60,7 +61,7 @@ class MinhaPagina extends StatelessWidget {
         // space to fit everything.
         child: ListView(
           // Important: Remove any padding from the ListView.
-          padding: const EdgeInsets.symmetric(vertical: 10.0),
+          padding: EdgeInsets.symmetric(vertical: 50),
           children: [
             const Spacer(),
             ListTile(

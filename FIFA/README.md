@@ -1,8 +1,8 @@
-# BackEnd
+# Projeto Review Fifa
 
-BackEnd do nosso projeto de review de cartas do Fifa.
+BackEnd e FrontEnd do nosso projeto de review de cartas do Fifa.
 
-## Passo a Passo da Criação:
+## Passo a Passo da Criação do BackEnd:
 
 - Criação do banco de dados.
 - Começo do backend (criar as variaveis do banco em models).

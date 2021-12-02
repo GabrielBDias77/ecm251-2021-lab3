@@ -1,16 +1,18 @@
-# ola_mundo
+# FrontEnd do Projeto Review de Fifa
 
-A new Flutter project.
+FrontEnd do nosso projeto de review de cartas do Fifa.
 
-## Getting Started
+## Passo a Passo da Criação:
 
-This project is a starting point for a Flutter application.
+- Criação da main.dart.
+- Implementação de atributos estéticos para exibição da main.
+- Atributos: AppBar, MaterialButton, ListView com as raridades, Imagem de fundo e texto.
+- Criação de jogador.dart, Jogador1.dart e Liga.dart em tentativas de puxar as informações dos jogadores e das ligas.
+- Criação da network_helper.dart para fazer a ligação do ktor com o FrontEnd.
+- Criação da JogadorLista.dart em tentativas de exibir as informações geradas clicando nas opções da ListView.
 
-A few resources to get you started if this is your first Flutter project:
+## Para começar:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Já ter iniciado todo o passo a passo do BackEnd.
+- Iniciar o main.dart.
+- Abrir o ListView e escolher a raridade.

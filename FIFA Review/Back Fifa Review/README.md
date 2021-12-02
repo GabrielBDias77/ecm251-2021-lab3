@@ -10,7 +10,7 @@ BackEnd do nosso projeto de review de cartas do Fifa.
 - Implementação de classes que retiram informações do banco.
 - Criação de todo a manipulação do banco usando DAO.
 - Criar uma REST API para enviar os dados manipulados pelo banco ao frontend.
-- Transformação da informação obtida usando o JSON.
+- Transformação da informação obtida usando o GSON.
 - Criação de rotas para todas as informações necessarias ao projeto.
 
 ## Tabelas do Banco:

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http'
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,12 +17,15 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { UsuarioListaComponent } from './usuarios/usuario-lista/usuario-lista.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { UsuarioService } from './usuarios/usuario.service';
+import { SuprimentoInserirComponent } from './suprimentos/suprimentos-inserir/suprimento-inserir.component';
+import { SuprimentoService } from './suprimentos/suprimento.service';
+import { SuprimentoListaComponent } from './suprimentos/suprimentos-lista/suprimento-lista.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,UsuarioInserirComponent,CabecalhoComponent,UsuarioListaComponent
+    AppComponent,UsuarioInserirComponent,CabecalhoComponent,UsuarioListaComponent,SuprimentoInserirComponent,SuprimentoListaComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,9 +37,11 @@ import { UsuarioService } from './usuarios/usuario.service';
     MatButtonModule,
     MatToolbarModule,
     MatExpansionModule,
+    HttpClientModule,
+
 
   ],
-  providers: [UsuarioService],
+  providers: [UsuarioService,SuprimentoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
